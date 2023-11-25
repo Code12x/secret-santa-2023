@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin's Secret Santa Shopping List</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background-image: url("./assets/christmas-background.jpg");
+            background-repeat: repeat;
+        }
+
+        .content {
+            background-color: #ccc;
+            width: 60%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .bottom-border::after {
+            content: ' ';
+            background-color: #333;
+            width: 80%;
+            height: 5px;
+            display: block;
+            border-radius: 3px;
+            margin: 10px auto;
+        }
+
+        ul {
+            margin-left: 65px;
+            font-size: 16pt;
+        }
+
+        ul>li {
+            margin-bottom: 10px;
+            list-style-image: url("assets/santa_small.png");
+            height: 59px;
+        }
+
+        .li-content {
+        }
+
+        @media screen and (max-width: 600px) {
+            .content {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 class="heading bottom-border">Justin's Secret Santa Shopping List</h1>
+
+        <ul>
+            <li><a target="_blank" href="https://www.sparkfun.com/products/23551">Raspberry Pi</a></li>
+            <li><a target="_blank" href="https://a.co/d/fGQ3fJi">SwissGear Backpack</a></li>
+            <li><a target="_blank" href="https://a.co/d/0CCeqv7">NETGEAR Network Ethernet Switch</a></li>
+            <li><a target="_blank" href="https://a.co/d/21Np6UG">NETGEAR WiFi Router</a></li>
+            <li>Business Casual Sweater [<a target="_blank" href="https://www.amazon.com/s?k=business+casual+sweater+men">Amazon</a>]</li>
+            <li>Carhartt (save the reciept... their cloths can be weird sizes)</li>
+
+            <!--<li><div class="li-content"><a target="_blank" href="https://www.sparkfun.com/products/23551">Raspberry Pi</a></div></li>-->
+            <!--<li><div class="li-content"><a target="_blank" href="https://a.co/d/fGQ3fJi">SwissGear Backpack</a></div></li>-->
+            <!--<li><div class="li-content"><a target="_blank" href="https://a.co/d/0CCeqv7">NETGEAR Network Ethernet Switch</a></div></li>-->
+            <!--<li><div class="li-content"><a target="_blank" href="https://a.co/d/21Np6UG">NETGEAR WiFi Router</a></div></li>-->
+            <!--<li><div class="li-content">Business Casual Sweater [<a target="_blank" href="https://www.amazon.com/s?k=business+casual+sweater+men">Amazon</a>]</div></li>-->
+            <!--<li><div class="li-content">Carhartt (save the reciept... their cloths can be weird sizes)</div></li> -->
+        </ul>
+    </div>
+</body>
+</html>
